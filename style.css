@@ -1,7 +1,9 @@
 #container { 
-    display: flex; 
+    display: grid;
+    align-items: center;
+    border: solid 25px red; 
 }
 
 .gridItem { 
-    border: 1px solid black;
+    border: 1px solid;
 }
