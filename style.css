@@ -1,9 +1,20 @@
+:root { 
+  --grid-cols: 16; 
+  --grid-rows: 16;  
+}
+
+
+
 #container { 
     display: grid;
-    align-items: center;
-    border: solid 25px red; 
+    grid-gap: 1em; 
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: solid 20px;
 }
 
 .gridItem { 
-    border: 1px solid;
+    padding: 1em; 
+    border: 1px sold #ddd; 
+    text-align: center; 
 }
