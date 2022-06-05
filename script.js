@@ -8,10 +8,21 @@ function createGrid(rows, cols) {
        const gridItem = document.createElement("div");
        gridItem.innerText = (i+1);
        gridItem.classList.add("grid-item");
-       container.appendChild(gridItem);
+       container.appendChild(gridItem);  
     };
+    hoverColour(); 
 
 };
+
+// function to add eventlistenever to each .grid-item and colour it at mouseover 
+function hoverColour() { 
+    let items = document.querySelectorAll(".grid-item"); 
+    items.forEach(item => { 
+        item.addEventListener('mouseover', () => { 
+            item.style.backgroundColor = "blue"; 
+        })
+    })
+}
 
 
 createGrid(16, 16);
