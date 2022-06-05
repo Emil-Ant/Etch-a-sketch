@@ -13,8 +13,8 @@
     border: solid 20px;
 }
 
-.gridItem { 
+.grid-item { 
     padding: 1em; 
     border: 1px sold #ddd; 
-    text-align: center; 
+    background-color: red;
 }
