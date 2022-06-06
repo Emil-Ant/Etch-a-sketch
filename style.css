@@ -3,6 +3,12 @@
   --grid-rows: 16;  
 }
 
+#parent { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+}
 
 
 #container { 
@@ -10,7 +16,11 @@
     grid-gap: 1em; 
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+<<<<<<< HEAD
 
+=======
+    border: solid 10px;
+>>>>>>> button_formatting
 }
 
 .grid-item { 

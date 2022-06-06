@@ -10,11 +10,12 @@ function createGrid(rows, cols) {
        gridItem.classList.add("grid-item");
        container.appendChild(gridItem);  
     };
-    hoverColour(); 
+    // hoverColour(); 
 
 };
 
 // function to add eventlistenever to each .grid-item and colour it at mouseover 
+<<<<<<< HEAD
 function hoverColour() { 
     let items = document.querySelectorAll(".grid-item"); 
     items.forEach(item => { 
@@ -23,6 +24,16 @@ function hoverColour() {
         });
     });
 };
+=======
+// function hoverColour() { 
+//     let items = document.querySelectorAll(".grid-item"); 
+//     items.forEach(item => { 
+//         item.addEventListener('mouseover', () => { 
+//             item.style.backgroundColor = "blue"; 
+//         })
+//     })
+// }
+>>>>>>> button_formatting
 
 
 createGrid(16, 16);
