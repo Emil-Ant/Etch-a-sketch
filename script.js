@@ -20,9 +20,9 @@ function hoverColour() {
     items.forEach(item => { 
         item.addEventListener('mouseover', () => { 
             item.style.backgroundColor = "blue"; 
-        })
-    })
-}
+        });
+    });
+};
 
 
 createGrid(16, 16);
