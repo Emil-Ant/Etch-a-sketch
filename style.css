@@ -5,9 +5,10 @@
 
 #parent { 
   display: flex; 
-  justify-content: center; 
+  justify-content: space-between; 
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; 
+  gap: 30px;  
 }
 
 #title { 
@@ -20,10 +21,18 @@
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     border: 5px solid; 
+    
 }
 
 .grid-item { 
     padding: 1em; 
     border: 1px sold #ddd; 
     background-color: red;
+}
+
+#reset-button { 
+  font-size: 30px; 
+  border: 1px solid black; 
+  padding: 20px;
+  width: 250px;  
 }
