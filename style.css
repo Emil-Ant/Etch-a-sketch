@@ -10,17 +10,16 @@
   flex-direction: column;
 }
 
+#title { 
+  font-family: Monaco, Courier New; 
+}
 
 #container { 
     display: grid;
     grid-gap: 1em; 
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-<<<<<<< HEAD
-
-=======
-    border: solid 10px;
->>>>>>> button_formatting
+    border: 5px solid; 
 }
 
 .grid-item { 
