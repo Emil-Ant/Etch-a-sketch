@@ -1,16 +1,40 @@
-// Create 16 x 16 Grid 
-const container = document.querySelector("#container");
+//TODO - Change "number"? 
 
-function createGrid(rows, cols) { 
-    container.style.setProperty('--grid rows', rows);
-    container.style.setProperty('--grid cols', cols);
-    for(i = 0; i < (rows * cols); i++) { 
+
+
+const container = document.querySelector("#container");
+reset = document.querySelector("#reset-button");
+
+reset.addEventListener('click', () => { 
+    resetSize(); 
+})
+
+function resetSize() { 
+    let number = prompt("What size would you like the grid to be?(1 - 100)"); 
+    container.style.setProperty('--grid rows', number);
+    container.style.setProperty('--grid cols', number);
+    createGrid(number);
+}
+
+
+function createGrid(number) { 
+    container.style.setProperty('--grid rows', number);
+    container.style.setProperty('--grid cols', number);
+    for(i = 0; i < (number * number); i++) { 
        const gridItem = document.createElement("div");
        gridItem.innerText = (i+1);
        gridItem.classList.add("grid-item");
        container.appendChild(gridItem);  
+        
+       // clear grid when reset button is clicked
+       function clearGrid() { 
+           reset.addEventListener('click', () => 
+           gridItem.style.backgroundColor = "white")
+       }
+    clearGrid();
+    hoverColour();  
     };
-    hoverColour(); 
+    
 
 };
 
@@ -21,11 +45,15 @@ function hoverColour() {
         item.addEventListener('mouseover', () => { 
             item.style.backgroundColor = "blue"; 
         });
+    
     });
+
+    
 };
 
 
-createGrid(16, 16);
+createGrid(16);
+
 
 
 
