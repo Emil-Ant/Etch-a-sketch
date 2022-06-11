@@ -3,6 +3,7 @@
   --grid-rows: 16;  
 } */
 
+
 #parent { 
   display: flex; 
   justify-content: space-between; 
@@ -25,7 +26,6 @@
 }
 
 .grid-item { 
-    padding: 1em; 
     background-color: white;
 }
 
