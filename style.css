@@ -1,7 +1,7 @@
-:root { 
+/* :root { 
   --grid-cols: 16; 
   --grid-rows: 16;  
-}
+} */
 
 #parent { 
   display: flex; 
@@ -17,16 +17,16 @@
 
 #container { 
     display: grid;
-    grid-gap: 1em; 
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-gap: 0;
+    /* grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr); */
     border: 5px solid; 
     
 }
 
 .grid-item { 
     padding: 1em; 
-    background-color: black;
+    background-color: white;
 }
 
 #reset-button { 
