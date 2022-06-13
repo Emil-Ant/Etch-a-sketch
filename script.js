@@ -1,6 +1,5 @@
 
 const container = document.querySelector("#container");
-reset = document.querySelector("#reset-button");
 
 function resetSize() { 
 
@@ -49,7 +48,7 @@ function createGrid(number) {
     }; 
 
     
-    createGrid(16);
+createGrid(16);
 
 
 
