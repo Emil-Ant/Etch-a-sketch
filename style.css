@@ -1,19 +1,17 @@
-/* :root { 
-  --grid-cols: 16; 
-  --grid-rows: 16;  
-} */
-
-
 #parent { 
   display: flex; 
   justify-content: space-between; 
   align-items: center;
   flex-direction: column; 
-  gap: 30px;  
+  gap: 0px;  
+  background-color: #FF5E5B; 
+  border-radius: 10px; 
+  padding: 10px;
 }
 
 #title { 
-  font-family: Monaco, Courier New; 
+  font-family: 'Monaco', 'Courier New';
+  color: #FFED66;
 }
 
 #container {
@@ -21,14 +19,18 @@
   height: 700px;
   display: grid;
   margin: 2rem;
-  border: 2px solid red;  
+  border: solid #FF5E5B;   
+  border-width: 6px 40px 0;
+  background-color: #AAAAAA; 
+  border-radius: 10px; 
 }
 
 #reset-button { 
-  font-size: 30px; 
-  border: 1px solid black; 
-  padding: 20px;
-  width: 230px;  
+  width: 100px;
+  height: 100px;
+  outline-style:initial;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
 body {
@@ -38,3 +40,4 @@ body {
   display: flex;
   justify-content: center;
 }
+

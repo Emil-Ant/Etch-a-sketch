@@ -2,8 +2,6 @@
 const container = document.querySelector("#container");
 reset = document.querySelector("#reset-button");
 
-// TODO: this function is creating div on top of the existing grid rather than resizing it. Dont think the problem is the function itself
-// TODO also: when removing i + 1 from loop the grid no longer fills up
 function resetSize() { 
 
     let newNumber = prompt("What size would you like the grid to be?(1 - 100)"); 
@@ -26,19 +24,19 @@ function createGrid(number) {
 
        //create grid and append it
        let gridItem = document.createElement("div");
-       gridItem.style.backgroundColor = "black";
+       gridItem.style.backgroundColor = "#AAAAAA";
        container.appendChild(gridItem);
         
 
        //colour blocks  
        gridItem.addEventListener('mouseover', e=> { 
-       gridItem.style.backgroundColor = "white"; 
+       gridItem.style.backgroundColor = "#333333"; 
    })
 
        // clear grid when reset button is clicked
        function clearGrid() { 
            reset.addEventListener('click', e=> {
-                gridItem.style.backgroundColor = "black";
+                gridItem.style.backgroundColor = "#AAAAAA";
            });
         } 
         clearGrid();
