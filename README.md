@@ -1,1 +1,3 @@
-Simple, basique. It's Etch-a-sketch, let's do it. 
+Etch-a-sketch made using HTML, CSS and Javascript.
+
+live preview: https://emil-ant.github.io/Etch-a-sketch/
