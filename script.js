@@ -5,7 +5,12 @@ reset = document.querySelector("#reset-button");
 function resetSize() { 
 
     let newNumber = prompt("What size would you like the grid to be?(1 - 100)"); 
+    if (newNumber <= 100 && newNumber >= 1) { 
     createGrid(newNumber);
+    } else { 
+        alert("Please enter a correct number!");
+        return resetSize(); 
+    }
 };  
 
 
